@@ -1,5 +1,5 @@
-opencv
-numpy
-dlib
-cmake
-face_recognition
+This packages should be installed 
+
+pip install opencv-python
+pip install numpy
+pip install face_recognition
