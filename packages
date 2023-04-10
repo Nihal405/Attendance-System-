@@ -1,4 +1,4 @@
-This packages should be installed 
+packages to be installed 
 
 pip install opencv-python
 pip install numpy
