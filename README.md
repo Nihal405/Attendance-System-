@@ -1,4 +1,4 @@
-# Attendance-System-
+# Attendance-System- Face Mark
 In today's digital age, face recognition technology has become increasingly popular, particularly in security and surveillance applications. One such application is attendance tracking, which can be especially useful in schools, universities, and workplaces. This project demonstrates the development of a face recognition attendance system using OpenCV and face_recognition libraries in Python.
 
 Working:
