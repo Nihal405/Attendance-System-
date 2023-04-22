@@ -11,12 +11,13 @@ known_face_names = []
 
 # Load images and encode faces
 for image_file in os.listdir("resources"):
-    image_path = os.path.join("resources", image_file)
-    image = face_recognition.load_image_file(image_path)
-    encoding = face_recognition.face_encodings(image)[0]
-    name = os.path.splitext(image_file)[0] # Use filename as name
-    known_face_encodings.append(encoding)
-    known_face_names.append(name)
+    if not image_file.startswith('.'):
+        image_path = os.path.join("resources", image_file)
+        image = face_recognition.load_image_file(image_path)
+        encoding = face_recognition.face_encodings(image)[0]
+        name = os.path.splitext(image_file)[0] # Use filename as name
+        known_face_encodings.append(encoding)
+        known_face_names.append(name)
 
 # Initialize video capture
 video_capture = cv2.VideoCapture(0)
